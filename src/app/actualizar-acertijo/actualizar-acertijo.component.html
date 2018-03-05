@@ -1,0 +1,19 @@
+<div id="actualizarAcertijo">
+  <mat-form-field>
+    <input matInput type="text" placeholder="Nombre"  [(ngModel)]="nombre" required>
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Acertijo"  [(ngModel)]="contenido" required>
+  </mat-form-field><br>
+  
+  <mat-form-field>
+    <input matInput type="text" placeholder="Solución"  [(ngModel)]="respuesta" required>
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Autor"  [(ngModel)]="autor" required>
+  </mat-form-field><br>
+
+  <button id="submit" (click)="actualizarAcertijo()" mat-raised-button color="primary">Actualizar Acertijo</button>
+</div>

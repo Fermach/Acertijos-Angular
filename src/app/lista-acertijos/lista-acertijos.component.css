@@ -1,0 +1,28 @@
+
+mat-cell{
+    text-align: left;
+    margin-right: 6px;
+    min-height: 50px;
+    margin-top: 6px;
+}
+#verRespuesta{
+    
+    background-color:limegreen;
+    color: white;
+
+    
+}
+#btnBorrar{
+    
+    background-color:red;
+    color: white;
+
+    
+}
+#btnActualizar{
+    
+    background-color:dodgerblue;
+    color: white;
+
+    
+}

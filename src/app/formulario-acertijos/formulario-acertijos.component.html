@@ -1,0 +1,20 @@
+<div id="crearAcertijo">
+  <mat-form-field>
+    <input matInput type="text" placeholder="Nombre"  [(ngModel)]="nombre" required>
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Acertijo"  [(ngModel)]="contenido" required>
+  </mat-form-field><br>
+  
+  <mat-form-field>
+    <input matInput type="text" placeholder="Solución"  [(ngModel)]="respuesta" required>
+  </mat-form-field><br>
+
+  <mat-form-field
+      >
+    <input matInput type="text" placeholder="Autor"  [(ngModel)]="autor" required>
+  </mat-form-field><br>
+
+  <button id="submit" (click)="crearAcertijo()" mat-raised-button color="primary">Agregar Acertijo</button>
+</div>

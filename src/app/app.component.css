@@ -1,0 +1,10 @@
+.toolbar-fullscreen {
+  display: none;
+}
+
+.toolbar-filler {
+  flex: 1 1 auto
+}
+.example-icon {
+  padding: 0 14px;
+}

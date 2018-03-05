@@ -1,0 +1,39 @@
+<div class="example-container mat-elevation-z8" fullscreen>
+    <mat-table #table [dataSource]="catalogo">
+  
+      <ng-container matColumnDef="nombre">
+        <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+        <mat-cell *matCellDef="let acertijo"> {{acertijo.nombre}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="contenido" style="margin-right: 10px">
+        <mat-header-cell *matHeaderCellDef> Acertijo </mat-header-cell>
+        <mat-cell *matCellDef="let acertijo"> {{acertijo.contenido}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="respuesta" >
+          <mat-header-cell *matHeaderCellDef> Solución </mat-header-cell>
+          <mat-cell *matCellDef="let acertijo"> 
+              <button id="verRespuesta" (click)="verRespuesta(acertijo)" mat-raised-button >Ver Respuesta</button>
+         
+            </mat-cell>
+        </ng-container>
+
+      <ng-container matColumnDef="autor">
+            <mat-header-cell *matHeaderCellDef> Autor </mat-header-cell>
+            <mat-cell *matCellDef="let acertijo"> {{acertijo.autor}} </mat-cell>
+          </ng-container>
+  
+       
+      <ng-container matColumnDef="opciones" >
+            <mat-header-cell *matHeaderCellDef> Opciones </mat-header-cell>
+            <mat-cell *matCellDef="let acertijo"> 
+                <button id="btnBorrar" (click)="borrar(acertijo)" mat-raised-button >Eliminar</button>
+                <button id="btnActualizar" (click)="actualizar(acertijo)" mat-raised-button >Actualizar</button>
+              </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>

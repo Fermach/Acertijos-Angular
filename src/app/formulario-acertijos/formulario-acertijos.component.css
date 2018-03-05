@@ -1,0 +1,16 @@
+#crearAcertijo{
+  margin: 25px;
+
+}
+
+mat-form-field{
+    width: 60%;
+}
+#submit{
+    margin-top: 8px;
+    margin-left: 50%;
+    background-color:darkslateblue;
+    color: white;
+
+    
+}
